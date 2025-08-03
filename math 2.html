@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics - EduPDF Viewer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="math.css">
+</head>
+<body>
+    <header>
+        <h1>Mathematics</h1>
+        <p>Explore chapters and study materials for Mathematics!</p>
+    </header>
+
+    <div class="container">
+        <h2>Chapters</h2>
+        <ul class="chapter-list">
+            <li>
+                <a href="#" onmouseenter="showTooltip(this)" onmouseleave="hideTooltip(this)">Chapter 1: Number Systems
+                    <div class="tooltip">
+                        <button onclick="viewPDF(https://drive.google.com/file/d/1UUHNGtg8tWYYwAlK7q2MCE4HzDx-XhC0/preview?usp=sharing)">View PDF</button>
+                        <button onclick="downloadPDF('https://mozilla.github.io/pdf.js/web/compressed.tracemonkey.pdf', 'Number_Systems.pdf')">Download PDF</button>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" onmouseenter="showTooltip(this)" onmouseleave="hideTooltip(this)">Chapter 2: Algebra
+                    <div class="tooltip">
+                        <button onclick="viewPDF('https://mozilla.github.io/pdf.js/web/compressed.tracemonkey.pdf')">View PDF</button>
+                        <button onclick="downloadPDF('https://mozilla.github.io/pdf.js/web/compressed.tracemonkey.pdf', 'Algebra.pdf')">Download PDF</button>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" onmouseenter="showTooltip(this)" onmouseleave="hideTooltip(this)">Chapter 3: Geometry
+                    <div class="tooltip">
+                        <button onclick="viewPDF('https://mozilla.github.io/pdf.js/web/compressed.tracemonkey.pdf')">View PDF</button>
+                        <button onclick="downloadPDF('https://mozilla.github.io/pdf.js/web/compressed.tracemonkey.pdf', 'Geometry.pdf')">Download PDF</button>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="math.js"></script>
+</body>
+</html>

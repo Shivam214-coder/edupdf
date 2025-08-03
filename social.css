@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Neue', sans-serif;
+}
+
+body {
+    background-color: #e6f3ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.chapter-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.chapter-list li {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.chapter-list a {
+    text-decoration: none;
+    color: #1a73e8;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tooltip.show {
+    display: block;
+    opacity: 1;
+}
+
+.tooltip button {
+    background-color: #4CAF50;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tooltip button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .chapter-list a {
+        font-size: 1em;
+    }
+}
